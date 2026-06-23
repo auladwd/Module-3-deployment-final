@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-proxy
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    command: >
+      /bin/sh -c "echo 'server { listen 80; location / { proxy_pass http://express-app:5000; } }' > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+
+  express-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: express-app
+    expose:
+      - "5000"
+    restart: unless-stopped
+    depends_on:
+      - nginx
