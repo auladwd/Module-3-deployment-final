@@ -105,7 +105,7 @@ newgrp docker
 ### Step 3 — Build Docker Image
 
 ```bash
-docker build -t YOUR_DOCKERHUB_USERNAME/module10-express-app:latest .
+docker build -t auladdevops/module10-express-app:latest .
 ```
 
 ### Step 4 — Push Image to DockerHub
@@ -178,3 +178,11 @@ docker exec -it nginx-proxy sh
 ```
 
 ---
+## Screenshots 
+<img width="864" height="844" alt="Docker_Build Push" src="https://github.com/user-attachments/assets/35df10c5-3dab-4e5a-a031-a1a1fb9d43bf" />
+<img width="861" height="598" alt="docker compose up -d --build" src="https://github.com/user-attachments/assets/cd50a034-4d27-4e85-88fa-58ccffcfc149" />
+<img width="903" height="842" alt="docker compose ps — containers running " src="https://github.com/user-attachments/assets/0a0acc94-4ec6-4fcb-a426-f75119de2340" />
+<img width="1112" height="991" alt="Browsr -1" src="https://github.com/user-attachments/assets/03632361-a8d9-4fb2-a231-c805a130a4fb" />
+<img width="1109" height="1027" alt="Browsr -2" src="https://github.com/user-attachments/assets/40042ce1-659a-43cd-81ac-5b1154042a08" />
+<img width="908" height="946" alt="Logs" src="https://github.com/user-attachments/assets/80f5a42e-1803-4732-b9a3-4062fd3da936" />
+
